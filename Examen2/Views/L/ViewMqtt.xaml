@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Examen2.Views.L.ViewMqtt">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid  BackgroundColor="Black" Padding="20">
+                <Label Text="{Binding Item.Text}" d:Text="Item name" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="50"/>
+            </Grid>
+            <Grid  BackgroundColor="White" Padding="0,40">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Margin="0,0,0,60" Grid.Column="0" Grid.Row="0">
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="40"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" Text="Temperatura"/>
+                </StackLayout>
+                <StackLayout Margin="0,0,0,60" Grid.Column="1" Grid.Row="0">
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="21"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" Text="CO2"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1">
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="21"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" Text="Humedad Del Suelo"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" Grid.Row="1">
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="21"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" Text="Humedad Del Aire"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid Margin="0,40,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Text="Calentar" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20" BackgroundColor="#CF1313"/>
+                <Button Grid.Column="1" Text="Enfriar" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20"  BackgroundColor="#21ABCA"/>
+                <Button Grid.Column="2" Text="Regar" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20"  BackgroundColor="#178D2D"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
