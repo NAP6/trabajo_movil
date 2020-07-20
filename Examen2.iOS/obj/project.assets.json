@@ -2536,24 +2536,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\panat\\.nuget\\packages\\": {},
+    "C:\\Users\\NICO\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\panat\\OneDrive\\Escritorio\\Examen2\\Examen2.iOS\\Examen2.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2.iOS\\Examen2.iOS.csproj",
       "projectName": "Examen2.iOS",
-      "projectPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\Examen2\\Examen2.iOS\\Examen2.iOS.csproj",
-      "packagesPath": "C:\\Users\\panat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\Examen2\\Examen2.iOS\\obj\\",
+      "projectPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2.iOS\\Examen2.iOS.csproj",
+      "packagesPath": "C:\\Users\\NICO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\panat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NICO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2567,8 +2567,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\panat\\OneDrive\\Escritorio\\Examen2\\Examen2\\Examen2.csproj": {
-              "projectPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\Examen2\\Examen2\\Examen2.csproj"
+            "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2\\Examen2.csproj": {
+              "projectPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2\\Examen2.csproj"
             }
           }
         }

@@ -12,25 +12,28 @@
     xmlns:local="clr-namespace:Examen2.Views.L"
     xmlns:viewModel="clr-namespace:Examen2.ViewModels.L"
     
-    BackgroundImageSource="{core:OnPlatformOrientationStringValue Default=planta.png,
+     >
+
+    <!--BackgroundImageSource="{core:OnPlatformOrientationStringValue Default=planta.png,
                                                                   iOSPhoneLandscape=planta.png,
                                                                   iOSTabletLandscape=planta.png}"
     NavigationPage.HasNavigationBar="False"
-    Style="{StaticResource ContentPageStyle}">
-
-    <ContentPage.Resources>
+    Style="{StaticResource ContentPageStyle}"  -->
+    
+    <!--<ContentPage.Resources>
         <ResourceDictionary>
             <converter:BooleanToColorConverter x:Key="ColorConverter" />
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </ContentPage.Resources>
+    </ContentPage.Resources> -->
 
     <!--  Binding context for login page  -->
-    <ContentPage.BindingContext>
+    <!-- <ContentPage.BindingContext>
         <viewModel:LoginPageViewModel />
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext> -->
+    
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -38,7 +41,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
                 
-            <Grid Grid.Row="0" >
+            <Grid Grid.Row="0" Padding="20">
                 <Label Text="GreenTech" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"></Label>
             </Grid>
                 
@@ -48,23 +51,28 @@
                 ItemsSource="{Binding Items}">
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <StackLayout Padding="10">
-                                    <StackLayout Orientation="Horizontal">
+                                <StackLayout Padding="5">
+                                    <!-- #42B72C -->
+                                    <Frame Padding="10" CornerRadius="10" BackgroundColor="Black"> 
+                                        <StackLayout Orientation="Horizontal">
 
-                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
-                                            <Image Source="https://static.vecteezy.com/system/resources/previews/000/609/684/non_2x/fire-logo-and-symbols-template-icons-app-vector.jpg" Aspect="AspectFill" Margin="0"/>
-                                        </Frame>
-                                        <StackLayout>
-                                            <Label Text="{Binding Nombre}" 
-                                        LineBreakMode="NoWrap" 
-                                        Style="{DynamicResource ListItemTextStyle}" 
-                                        FontSize="16" />
-                                            <Label Text="{Binding Descripcion}" 
-                                        LineBreakMode="NoWrap"
-                                        Style="{DynamicResource ListItemDetailTextStyle}"
-                                        FontSize="13" />
+                                            <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                                <Image Source="https://static.vecteezy.com/system/resources/previews/000/609/684/non_2x/fire-logo-and-symbols-template-icons-app-vector.jpg" Aspect="AspectFill" Margin="0"/>
+                                            </Frame>
+                                            <StackLayout>
+                                                <Label Text="{Binding Nombre}" 
+                                                       TextColor="White"
+                                                        LineBreakMode="NoWrap" 
+                                                        Style="{DynamicResource ListItemTextStyle}" 
+                                                        FontSize="16" />    
+                                                <Label Text="{Binding Descripcion}" 
+                                                       TextColor="White"
+                                                       LineBreakMode="NoWrap"
+                                                       Style="{DynamicResource ListItemDetailTextStyle}"
+                                                       FontSize="13" />
+                                            </StackLayout>
                                         </StackLayout>
-                                    </StackLayout>
+                                    </Frame>
 
                                     <StackLayout.GestureRecognizers>
                                         <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnItemSelected"></TapGestureRecognizer>

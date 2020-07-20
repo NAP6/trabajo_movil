@@ -1,4 +1,6 @@
-﻿using M2Mqtt;
+﻿using Examen2.Models;
+using M2Mqtt;
+using M2Mqtt.Messages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +23,11 @@ namespace Examen2.Views.L
         private string username;
         private string password;
         private MqttClient cliente;
-        private List<string> suscripcion = new List<string>();
 
-        public ViewMqtt()
+        public ItemsListaInver item { get; set; }
+        public ViewMqtt(ItemsListaInver item)
         {
+            BindingContext = this.item = item;
             InitializeComponent();
         }
         public void conectar()
@@ -40,12 +43,10 @@ namespace Examen2.Views.L
                     DisplayAlert("ERROR","Cliente No Conectado","OK");
 
                 }
-                byte[] Qos ={0};
-                string aux;
-                foreach (var item in collection)
-                {
+                string[] topic = { "sensor/temp"};
 
-                }
+                byte[] qosLevels = { MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE};
+                cliente.Subscribe(topic, qosLevels);
 
             }
             catch (M2Mqtt.Exceptions.MqttClientException) 
@@ -64,12 +65,16 @@ namespace Examen2.Views.L
 
         private void Cliente_MqttMsgPublishReceived(object sender, M2Mqtt.Messages.MqttMsgPublishEventArgs e)
         {
-            if (suscripcion.Contains(e.Topic.ToString()))
-            {
-                String[] separador = { "/" };
-                string[] aux = e.Topic.ToString().Split(new char[]  = { '/'});
+            var topic = e.Topic;
+            string msg = e.Message.ToString();
 
-            }
+            string[] ambiente = msg.Split(':');
+            ambiente = ambiente[0].Split('/');
+
+            string[] temperatura    = ambiente[0].Split('-');
+            string[] CO2            = ambiente[0].Split('-');
+            string[] humedad_suelo  = ambiente[0].Split('-');
+            string[] humedad_aire   = ambiente[0].Split('-');
         }
     }
 }

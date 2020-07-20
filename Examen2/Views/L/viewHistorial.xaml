@@ -5,9 +5,111 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Examen2.Views.L.viewHistorial">
-    <ContentPage.Content>
-        <StackLayout>
-            
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout>
+
+        <Grid BackgroundColor="Black" Padding="10,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+
+                <!--<Label Grid.Row="0" Grid.ColumnSpan="5" Text="{Binding Title}" d:Text="Item name" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="50"/>-->
+
+                <Label Grid.Column="0" Grid.Row="1" Text="Fecha" 
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                                        Style="{DynamicResource ListItemTextStyle}" 
+                                        FontSize="20" />
+                
+                <Label Grid.Column="1" Grid.Row="1" Text="T" 
+                   TextColor="White"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        FontSize="20" />
+                
+                <Label Grid.Column="2" Grid.Row="1" Text="CO2" 
+                   TextColor="White"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        FontSize="20" />
+                
+                <Label Grid.Column="3" Grid.Row="1" Text="HA" 
+                   TextColor="White"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        FontSize="20" />
+                
+                <Label Grid.Column="4" Grid.Row="1" Text="HS" 
+                   TextColor="White"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        FontSize="20" />
+                
+
+            </Grid>
+        </Grid>
+
+        <ScrollView>
+            <RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}" Command="{Binding LoadItemsCommand}">
+                <CollectionView x:Name="ItemsCollectionView"
+                ItemsSource="{Binding Items}">
+                    <d:CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>15/10/2020 06:05:30</x:String>
+                            <x:String>15/10/2020 06:05:30</x:String>
+                            <x:String>15/10/2020 06:05:30</x:String>
+                        </x:Array>
+                    </d:CollectionView.ItemsSource>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="3*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Text="{Binding fecha}" 
+                                        d:Text="{Binding .}"
+                                        LineBreakMode="NoWrap" 
+                                        Style="{DynamicResource ListItemTextStyle}" 
+                                        FontSize="16" />
+                                    <Label Grid.Column="1" Text="{Binding temperatura}" 
+                                        d:Text="21.5"
+                                        LineBreakMode="NoWrap"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        FontSize="13" />
+                                    <Label Grid.Column="2" Text="{Binding co2}" 
+                                        d:Text="21.5"
+                                        LineBreakMode="NoWrap"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        FontSize="13" />
+                                    <Label Grid.Column="3" Text="{Binding humedad_aire}" 
+                                        d:Text="21.5"
+                                        LineBreakMode="NoWrap"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        FontSize="13" />
+                                    <Label Grid.Column="4" Text="{Binding humedad_suelo}" 
+                                        d:Text="21.5"
+                                        LineBreakMode="NoWrap"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        FontSize="13" />
+                                </Grid>
+                                <BoxView BackgroundColor="Black" HeightRequest="1"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

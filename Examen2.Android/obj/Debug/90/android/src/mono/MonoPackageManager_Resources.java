@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"Examen2.Android.dll",
 		"Examen2.dll",
 		"FormsViewGroup.dll",
+		"M2MqttClientDotnetCore1.0.1.dll",
 		"Syncfusion.Buttons.XForms.Android.dll",
 		"Syncfusion.Buttons.XForms.dll",
 		"Syncfusion.Cards.XForms.Android.dll",

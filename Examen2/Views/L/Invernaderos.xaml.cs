@@ -19,9 +19,10 @@ namespace Examen2.Views.L
         public Invernaderos()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             BindingContext = viewModel = new ItemsListaInverViewModel();
-
+            
 
         }
         public async void OnItemSelected(object sender, EventArgs args)

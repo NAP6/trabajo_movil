@@ -19,12 +19,6 @@ namespace Examen2.ViewModels.L
             Title = "Lista Invernaderos";
             Items = new ObservableCollection<ItemsListaInver>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-            /// MessagingCenter.Subscribe<NewItemPage, ItemsListaInver>(this, "AddItem", async (obj, item) =>
-            //{
-            //  var newItem = item as ItemsListaInver;
-            //Items.Add(newItem);
-            // await DataStore.AddItemAsync(newItem);
-            // });
         }
 
         async Task ExecuteLoadItemsCommand()
@@ -38,7 +32,6 @@ namespace Examen2.ViewModels.L
                
                 Items.Clear();
                 var items = await DataStore.GetItemsAsync(true);
-                Debug.Write("***************************** " + Items.Count);
                 foreach (var item in items)
                 {
                     Items.Add(item);
@@ -48,7 +41,6 @@ namespace Examen2.ViewModels.L
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
-                Debug.WriteLine("aQUIIIIIIIII EROOOOOR OYEEE AQUIIII EROOOOR");
             }
             finally
             {

@@ -15,16 +15,20 @@ namespace Examen2.Views.L
     public partial class InvernaderoMasterDet : MasterDetailPage
     {
         Dictionary<int, NavigationPage> MenuPages = new Dictionary<int, NavigationPage>();
+        public ItemsListaInver item { get; set; }
         public InvernaderoMasterDet(ItemsListaInver item)
         {
+
+            this.item = item;
+
             int index = Application.Current.MainPage.Navigation.NavigationStack.Count;
             Master = new InvernaderoMasterDetMaster(index);
+
+            NavigateFromMenu((int)MenuItem.mqtt);
 
             InitializeComponent();
 
             
-
-            MenuPages.Add((int)MenuItem.mqtt, (NavigationPage)Detail);
         }
 
         async void Cancel_Clicked(object sender, EventArgs e)
@@ -39,10 +43,10 @@ namespace Examen2.Views.L
                 switch (id)
                 {
                     case (int)MenuItem.mqtt:
-                        MenuPages.Add(id, new NavigationPage(new ViewMqtt()));
+                        MenuPages.Add(id, new NavigationPage(new ViewMqtt(item)));
                         break;
                     case (int)MenuItem.historial:
-                        MenuPages.Add(id, new NavigationPage(new viewHistorial()));
+                        MenuPages.Add(id, new NavigationPage(new viewHistorial(item)));
                         break;
                 }
             }
@@ -51,7 +55,6 @@ namespace Examen2.Views.L
 
             if (newPage != null && Detail != newPage)
             {
-                Debug.WriteLine("Cambia");
                 Detail = newPage;
 
                 if (Device.RuntimePlatform == Device.Android)

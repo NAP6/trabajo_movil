@@ -2782,24 +2782,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\panat\\.nuget\\packages\\": {},
+    "C:\\Users\\NICO\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\panat\\OneDrive\\Escritorio\\Examen2\\Examen2.Android\\Examen2.Android.csproj",
+      "projectUniqueName": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2.Android\\Examen2.Android.csproj",
       "projectName": "Examen2.Android",
-      "projectPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\Examen2\\Examen2.Android\\Examen2.Android.csproj",
-      "packagesPath": "C:\\Users\\panat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\Examen2\\Examen2.Android\\obj\\",
+      "projectPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2.Android\\Examen2.Android.csproj",
+      "packagesPath": "C:\\Users\\NICO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\panat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NICO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2813,8 +2813,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\panat\\OneDrive\\Escritorio\\Examen2\\Examen2\\Examen2.csproj": {
-              "projectPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\Examen2\\Examen2\\Examen2.csproj"
+            "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2\\Examen2.csproj": {
+              "projectPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2\\Examen2.csproj"
             }
           }
         }

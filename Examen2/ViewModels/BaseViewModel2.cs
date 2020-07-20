@@ -13,6 +13,7 @@ namespace Examen2.ViewModels
     public class BaseViewModel2:INotifyPropertyChanged
     {
         public IDataStore<ItemsListaInver> DataStore => DependencyService.Get<IDataStore<ItemsListaInver>>();
+        public IDataStore<ambiente> DataStoreH => DependencyService.Get<IDataStore<ambiente>>();
 
         bool isBusy = false;
         public bool IsBusy

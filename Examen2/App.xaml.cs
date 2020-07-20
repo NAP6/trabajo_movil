@@ -13,6 +13,7 @@ namespace Examen2
         {
             InitializeComponent();
             DependencyService.Register<MockDataStore>();
+            DependencyService.Register<InvernaderoService>();
             MainPage = new NavigationPage(new Examen2.Views.L.LoginPage());
         }
 

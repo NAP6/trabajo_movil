@@ -5,10 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Examen2.Views.L.ViewMqtt">
+    
+
+    
     <ContentPage.Content>
         <StackLayout>
             <Grid  BackgroundColor="Black" Padding="20">
-                <Label Text="{Binding Item.Text}" d:Text="Item name" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="50"/>
+                <Label Text="{Binding Nombre}" d:Text="Item name" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="50"/>
             </Grid>
             <Grid  BackgroundColor="White" Padding="0,40">
                 <Grid.RowDefinitions>
