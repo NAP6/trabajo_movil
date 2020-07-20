@@ -14,12 +14,7 @@ namespace Examen2.Services
         {
             items = new List<ItemsListaInver>()
             {
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "First item",Descripcion="This is an item description." },
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "Second item", Descripcion="This is an item description." },
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "Third item", Descripcion="This is an item description." },
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "Fourth item", Descripcion="This is an item description." },
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "Fifth item", Descripcion="This is an item description." },
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "Sixth item", Descripcion="This is an item description." }
+                new ItemsListaInver { Id = "100", Nombre = "Invernadero Experimental",Descripcion="Este es un invernadero experimental en chaullabamba." }
             };
         }
 
