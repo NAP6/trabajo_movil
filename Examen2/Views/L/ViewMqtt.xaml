@@ -11,7 +11,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Grid  BackgroundColor="Black" Padding="20">
-                <Label Text="{Binding Nombre}" d:Text="Item name" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="50"/>
+                <Label Text="{Binding item.Nombre}" d:Text="Item name" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="50"/>
             </Grid>
             <Grid  BackgroundColor="White" Padding="0,40">
                 <Grid.RowDefinitions>
@@ -23,19 +23,19 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackLayout Margin="0,0,0,60" Grid.Column="0" Grid.Row="0">
-                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="40"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="{Binding Temperatura}"/>
                     <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" Text="Temperatura"/>
                 </StackLayout>
                 <StackLayout Margin="0,0,0,60" Grid.Column="1" Grid.Row="0">
-                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="21"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="{Binding CO2}"/>
                     <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" Text="CO2"/>
                 </StackLayout>
                 <StackLayout Grid.Column="0" Grid.Row="1">
-                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="21"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="{Binding Hum_Suel}"/>
                     <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" Text="Humedad Del Suelo"/>
                 </StackLayout>
                 <StackLayout Grid.Column="1" Grid.Row="1">
-                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="21"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="40" Text="{Binding Hum_Air}"/>
                     <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" Text="Humedad Del Aire"/>
                 </StackLayout>
             </Grid>
@@ -46,9 +46,9 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Text="Calentar" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20" BackgroundColor="#CF1313"/>
-                <Button Grid.Column="1" Text="Enfriar" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20"  BackgroundColor="#21ABCA"/>
-                <Button Grid.Column="2" Text="Regar" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20"  BackgroundColor="#178D2D"/>
+                <Button Grid.Column="0" Text="Calentar" Clicked="btn_Calentar_Click" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20" BackgroundColor="#CF1313"/>
+                <Button Grid.Column="1" Text="Enfriar" Clicked="btn_Enfriar_Click" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20"  BackgroundColor="#21ABCA"/>
+                <Button Grid.Column="2" Text="Regar" Clicked="btn_Regar_Click" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20"  BackgroundColor="#178D2D"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
