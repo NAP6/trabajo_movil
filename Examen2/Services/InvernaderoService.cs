@@ -55,23 +55,6 @@ namespace Examen2.Services
 
                         throw;
                     }
-                   
-                    /*for (int i = 0; i < (int)(datos["ta_historial_invernadero"].Count); i++)
-                    {
-                        if (datos["fecha_historial"] != null)
-
-                        {
-                            var historial = new ambiente();
-                            historial.fecha = (datos["ta_historial_invernadero"][i]["fecha_historial"]).ToString();
-                            historial.temperatura = (datos["ta_historial_invernadero"][i]["his_temperatura_int"]).ToString() + "°C";
-                            historial.co2 = (datos["ta_historial_invernadero"][i]["his_temperatura_int"]).ToString() + "%";
-                            historial.humedad_aire = (datos["ta_historial_invernadero"][i]["his_temperatura_int"]).ToString() + "°%";
-                            historial.humedad_suelo = (datos["ta_historial_invernadero"][i]["his_temperatura_int"]).ToString() + "°%";
-                            return historial;
-                        }
-                    }*/
-
-
                 }
             }
             return default( ambiente);
