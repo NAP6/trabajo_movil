@@ -11,6 +11,7 @@ namespace Examen2
         public static string BaseImageUrl { get; } = "https://cdn.syncfusion.com/essential-ui-kit-for-xamarin.forms/common/uikitimages/";
         public static string usuario { get; set; }
         public static string contrasenia { get; set; }
+        public static string invernadero { get; set; }
         public App()
         {
             InitializeComponent();

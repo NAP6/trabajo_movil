@@ -64,6 +64,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "NuGet.CommandLine/3.5.0": {
         "type": "package"
       },
@@ -1071,11 +1080,12 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "poZPXhBUcLA8pExIb6EeiA15vTh2YPTT+2KiQxtuQTJA5lvLzpKQAPQcV/+2xhKif7IfS7kDbeMi0vZShrAVDg==",
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -1196,6 +1206,37 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "NuGet.CommandLine/3.5.0": {
@@ -4039,6 +4080,7 @@
     ".NETStandard,Version=v2.0": [
       "M2MqttClientDotnetCore >= 1.0.1",
       "NETStandard.Library >= 2.0.3",
+      "Newtonsoft.Json >= 12.0.3",
       "Syncfusion.Xamarin.Buttons >= 18.2.0.45",
       "Syncfusion.Xamarin.Cards >= 18.2.0.45",
       "Syncfusion.Xamarin.Core >= 18.2.0.45",
@@ -4052,25 +4094,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NICO\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\panat\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2\\Examen2.csproj",
+      "projectUniqueName": "C:\\Users\\panat\\OneDrive\\Escritorio\\trabajo_movil\\Examen2\\Examen2.csproj",
       "projectName": "Examen2",
-      "projectPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2\\Examen2.csproj",
-      "packagesPath": "C:\\Users\\NICO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2\\obj\\",
+      "projectPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\trabajo_movil\\Examen2\\Examen2.csproj",
+      "packagesPath": "C:\\Users\\panat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\trabajo_movil\\Examen2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\NICO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\panat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -4104,6 +4144,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
           },
           "Syncfusion.Xamarin.Buttons": {
             "target": "Package",
@@ -4156,7 +4200,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

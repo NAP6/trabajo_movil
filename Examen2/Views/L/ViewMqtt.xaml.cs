@@ -66,7 +66,7 @@ namespace Examen2.Views.L
 
         private void Cliente_ConnectionClosed(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
 
         private async void Cliente_MqttMsgPublishReceived(object sender, M2Mqtt.Messages.MqttMsgPublishEventArgs e)

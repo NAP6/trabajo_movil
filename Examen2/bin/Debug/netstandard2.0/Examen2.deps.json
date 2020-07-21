@@ -11,6 +11,7 @@
         "dependencies": {
           "M2MqttClientDotnetCore": "1.0.1",
           "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.3",
           "Syncfusion.Xamarin.Buttons": "18.2.0.45",
           "Syncfusion.Xamarin.Cards": "18.2.0.45",
           "Syncfusion.Xamarin.Core": "18.2.0.45",
@@ -55,6 +56,14 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
         }
       },
       "NuGet.CommandLine/3.5.0": {},
@@ -763,9 +772,16 @@
     "NETStandard.Library/2.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-poZPXhBUcLA8pExIb6EeiA15vTh2YPTT+2KiQxtuQTJA5lvLzpKQAPQcV/+2xhKif7IfS7kDbeMi0vZShrAVDg==",
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
     "NuGet.CommandLine/3.5.0": {
       "type": "package",

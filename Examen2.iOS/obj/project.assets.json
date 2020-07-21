@@ -20,6 +20,15 @@
           "lib/netstandard1.3/M2MqttClientDotnetCore1.0.1.dll": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "NuGet.CommandLine/3.5.0": {
         "type": "package"
       },
@@ -399,6 +408,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "M2MqttClientDotnetCore": "1.0.1",
+          "Newtonsoft.Json": "12.0.3",
           "Syncfusion.Xamarin.Buttons": "18.2.0.45",
           "Syncfusion.Xamarin.Cards": "18.2.0.45",
           "Syncfusion.Xamarin.Core": "18.2.0.45",
@@ -435,6 +445,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/M2MqttClientDotnetCore1.0.1.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "NuGet.CommandLine/3.5.0": {
@@ -786,6 +805,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "M2MqttClientDotnetCore": "1.0.1",
+          "Newtonsoft.Json": "12.0.3",
           "Syncfusion.Xamarin.Buttons": "18.2.0.45",
           "Syncfusion.Xamarin.Cards": "18.2.0.45",
           "Syncfusion.Xamarin.Core": "18.2.0.45",
@@ -824,6 +844,15 @@
           "lib/netstandard1.3/M2MqttClientDotnetCore1.0.1.dll": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "NuGet.CommandLine/3.5.0": {
         "type": "package"
       },
@@ -1173,6 +1202,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "M2MqttClientDotnetCore": "1.0.1",
+          "Newtonsoft.Json": "12.0.3",
           "Syncfusion.Xamarin.Buttons": "18.2.0.45",
           "Syncfusion.Xamarin.Cards": "18.2.0.45",
           "Syncfusion.Xamarin.Core": "18.2.0.45",
@@ -1211,6 +1241,15 @@
           "lib/netstandard1.3/M2MqttClientDotnetCore1.0.1.dll": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "NuGet.CommandLine/3.5.0": {
         "type": "package"
       },
@@ -1560,6 +1599,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "M2MqttClientDotnetCore": "1.0.1",
+          "Newtonsoft.Json": "12.0.3",
           "Syncfusion.Xamarin.Buttons": "18.2.0.45",
           "Syncfusion.Xamarin.Cards": "18.2.0.45",
           "Syncfusion.Xamarin.Core": "18.2.0.45",
@@ -1591,6 +1631,37 @@
         "lib/netstandard1.3/M2MqttClientDotnetCore1.0.1.dll",
         "m2mqttclientdotnetcore.1.0.1.nupkg.sha512",
         "m2mqttclientdotnetcore.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "NuGet.CommandLine/3.5.0": {
@@ -2536,24 +2607,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NICO\\.nuget\\packages\\": {},
+    "C:\\Users\\panat\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2.iOS\\Examen2.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\panat\\OneDrive\\Escritorio\\trabajo_movil\\Examen2.iOS\\Examen2.iOS.csproj",
       "projectName": "Examen2.iOS",
-      "projectPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2.iOS\\Examen2.iOS.csproj",
-      "packagesPath": "C:\\Users\\NICO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2.iOS\\obj\\",
+      "projectPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\trabajo_movil\\Examen2.iOS\\Examen2.iOS.csproj",
+      "packagesPath": "C:\\Users\\panat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\trabajo_movil\\Examen2.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\NICO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\panat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2567,8 +2638,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2\\Examen2.csproj": {
-              "projectPath": "C:\\Users\\NICO\\source\\repos\\Examen2\\Examen2\\Examen2.csproj"
+            "C:\\Users\\panat\\OneDrive\\Escritorio\\trabajo_movil\\Examen2\\Examen2.csproj": {
+              "projectPath": "C:\\Users\\panat\\OneDrive\\Escritorio\\trabajo_movil\\Examen2\\Examen2.csproj"
             }
           }
         }

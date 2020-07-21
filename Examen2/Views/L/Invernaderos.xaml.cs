@@ -18,10 +18,13 @@ namespace Examen2.Views.L
         ItemsListaInverViewModel viewModel;
         public Invernaderos()
         {
+
+            BindingContext = viewModel = new ItemsListaInverViewModel();
+
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
 
-            BindingContext = viewModel = new ItemsListaInverViewModel();
+            
             
 
         }
