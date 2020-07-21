@@ -16,12 +16,11 @@ namespace Examen2.Services
 
         public InvernaderoService()
         {
-           
         }
 
         public static async Task<ambiente> CargaHisto(string invernadero)
         {
-            var conexion = $"http://192.168.1.5:50980/api/Historial?invernadero=100";
+            var conexion = $"http://192.168.1.5:50980/api/Historial?invernadero={invernadero}";
             using (var inver = new HttpClient())
             {
                 var peticion = await inver.GetAsync(conexion);
@@ -92,7 +91,7 @@ namespace Examen2.Services
 
         public async Task<IEnumerable<ambiente>> GetItemsAsync(bool forceRefresh = false)
         {
-            await CargaHisto("100");
+            await CargaHisto(App.invernadero);
             return await Task.FromResult(items);
         }
     }

@@ -17,16 +17,19 @@ namespace Examen2.Views.L {
     public partial class SignUpPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Examen2.Controls.BorderlessEntry NameEntry;
+        private global::Examen2.Controls.BorderlessEntry usuario;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Examen2.Controls.BorderlessEntry PasswordEntry;
+        private global::Examen2.Controls.BorderlessEntry correoUser;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Examen2.Controls.BorderlessEntry ConfirmPasswordEntry;
+        private global::Examen2.Controls.BorderlessEntry Password1;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Examen2.Controls.BorderlessEntry Invernadero;
+        private global::Examen2.Controls.BorderlessEntry Password2;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Syncfusion.XForms.Buttons.SfButton Registrarse;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Syncfusion.XForms.Buttons.SfButton Ingreso;
@@ -34,10 +37,11 @@ namespace Examen2.Views.L {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SignUpPage));
-            NameEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Examen2.Controls.BorderlessEntry>(this, "NameEntry");
-            PasswordEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Examen2.Controls.BorderlessEntry>(this, "PasswordEntry");
-            ConfirmPasswordEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Examen2.Controls.BorderlessEntry>(this, "ConfirmPasswordEntry");
-            Invernadero = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Examen2.Controls.BorderlessEntry>(this, "Invernadero");
+            usuario = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Examen2.Controls.BorderlessEntry>(this, "usuario");
+            correoUser = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Examen2.Controls.BorderlessEntry>(this, "correoUser");
+            Password1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Examen2.Controls.BorderlessEntry>(this, "Password1");
+            Password2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Examen2.Controls.BorderlessEntry>(this, "Password2");
+            Registrarse = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "Registrarse");
             Ingreso = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "Ingreso");
         }
     }

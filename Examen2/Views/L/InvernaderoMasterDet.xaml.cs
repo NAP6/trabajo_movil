@@ -20,6 +20,7 @@ namespace Examen2.Views.L
         {
 
             this.item = item;
+            App.invernadero = item.Id;
 
             int index = Application.Current.MainPage.Navigation.NavigationStack.Count;
             Master = new InvernaderoMasterDetMaster(index);

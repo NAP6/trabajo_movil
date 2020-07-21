@@ -21,7 +21,7 @@ namespace Examen2.Services
 
         public static async Task<ItemsListaInver> CargaInvernaderos(string usuario)
         {
-            var conexion = $"http://192.168.1.5:50980/api/Cliente?username=nicolas";
+            var conexion = $"http://192.168.1.5:50980/api/Cliente?username={usuario}";
             using (var inver = new HttpClient())
             {
                 var peticion = await inver.GetAsync(conexion);
@@ -93,7 +93,7 @@ namespace Examen2.Services
 
         public async Task<IEnumerable<ItemsListaInver>> GetItemsAsync(bool forceRefresh = false)
         {
-            await CargaInvernaderos("nicolas");
+            await CargaInvernaderos(App.usuario);
             return await Task.FromResult(items);
         }
     }
