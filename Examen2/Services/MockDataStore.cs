@@ -1,27 +1,83 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Examen2.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Examen2.Services
 {
     public class MockDataStore : IDataStore<ItemsListaInver>
     {
-        readonly List<ItemsListaInver> items;
+        readonly static List<ItemsListaInver> items = new List<ItemsListaInver>();
 
         public MockDataStore()
         {
-            items = new List<ItemsListaInver>()
-            {
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "First item",Descripcion="This is an item description." },
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "Second item", Descripcion="This is an item description." },
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "Third item", Descripcion="This is an item description." },
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "Fourth item", Descripcion="This is an item description." },
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "Fifth item", Descripcion="This is an item description." },
-                new ItemsListaInver { Id = Guid.NewGuid().ToString(), Nombre = "Sixth item", Descripcion="This is an item description." }
-            };
+
         }
+
+        public static async Task<ItemsListaInver> CargaInvernaderos(string usuario)
+        {
+            var conexion = $"http://192.168.1.5:50980/api/Cliente?username=nicolas";
+            using (var inver = new HttpClient())
+            {
+                var peticion = await inver.GetAsync(conexion);
+                if (peticion != null)
+                {
+                    var content = peticion.Content.ReadAsStringAsync().Result;
+                    var json = String.Join("", System.Text.RegularExpressions.Regex.Split(content, @"(?:\\r\\n|\\n|\\r)"));
+
+                    json = json.Replace("\\", "");
+                    Debug.WriteLine(json);
+                    json = json.Substring(1, json.Length - 2);
+                    Debug.WriteLine(json);
+                    try
+                    {
+
+                        var datos = (JContainer)JsonConvert.DeserializeObject(json);
+                        //,new JsonSerializerSettings { NullValueHandling=NullValueHandling.Ignore
+                        Debug.WriteLine(datos);
+
+                        items.Clear();
+                        foreach (var item in datos)
+                        {
+                            items.Add(new ItemsListaInver { Id = (string)item["Id"], Nombre = (string)item["Nombre"], Descripcion = (string)item["Descripcion"] });
+
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine(ex.ToString());
+
+
+                        throw;
+                    }
+
+                    /*for (int i = 0; i < (int)(datos["ta_historial_invernadero"].Count); i++)
+                    {
+                        if (datos["fecha_historial"] != null)
+
+                        {
+                            var historial = new ambiente();
+                            historial.fecha = (datos["ta_historial_invernadero"][i]["fecha_historial"]).ToString();
+                            historial.temperatura = (datos["ta_historial_invernadero"][i]["his_temperatura_int"]).ToString() + "°C";
+                            historial.co2 = (datos["ta_historial_invernadero"][i]["his_temperatura_int"]).ToString() + "%";
+                            historial.humedad_aire = (datos["ta_historial_invernadero"][i]["his_temperatura_int"]).ToString() + "°%";
+                            historial.humedad_suelo = (datos["ta_historial_invernadero"][i]["his_temperatura_int"]).ToString() + "°%";
+                            return historial;
+                        }
+                    }*/
+
+
+                }
+            }
+            return default(ItemsListaInver);
+        }
+
 
         public async Task<bool> AddItemAsync(ItemsListaInver item)
         {
@@ -54,6 +110,7 @@ namespace Examen2.Services
 
         public async Task<IEnumerable<ItemsListaInver>> GetItemsAsync(bool forceRefresh = false)
         {
+            await CargaInvernaderos("nicolas");
             return await Task.FromResult(items);
         }
     }

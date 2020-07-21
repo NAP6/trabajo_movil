@@ -21,7 +21,6 @@ namespace Examen2.Views.L
             InitializeComponent();
             BindingContext = viewModel = new ambienteViewModels();
         }
-
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -29,6 +28,5 @@ namespace Examen2.Views.L
             if (viewModel.Items.Count == 0)
                 viewModel.IsBusy = true;
         }
-
     }
 }
