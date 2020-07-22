@@ -13,7 +13,7 @@
             <Grid  BackgroundColor="Black" Padding="20">
                 <Label Text="{Binding item.Nombre}" d:Text="Item name" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="50"/>
             </Grid>
-            <Grid  BackgroundColor="White" Padding="0,40">
+            <Grid  BackgroundColor="White" Padding="0,30">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -46,7 +46,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Text="Calentar" Clicked="btn_Calentar_Click" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20" BackgroundColor="#CF1313"/>
+                <Button Grid.Column="0" Text="Calentar" Clicked="btn_Calentar_Click" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20"  BackgroundColor="#CF1313"/>
                 <Button Grid.Column="1" Text="Enfriar" Clicked="btn_Enfriar_Click" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20"  BackgroundColor="#21ABCA"/>
                 <Button Grid.Column="2" Text="Regar" Clicked="btn_Regar_Click" FontSize="20" Padding="0,20" TextColor="White" CornerRadius="20"  BackgroundColor="#178D2D"/>
             </Grid>

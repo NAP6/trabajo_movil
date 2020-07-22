@@ -11,7 +11,7 @@
     xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
     xmlns:local="clr-namespace:Examen2.Views.L"
     xmlns:viewModel="clr-namespace:Examen2.ViewModels.L"
-    
+    xmlns:magicGradients="clr-namespace:MagicGradients;assembly=MagicGradients"
      >
 
     <!--BackgroundImageSource="{core:OnPlatformOrientationStringValue Default=planta.png,
@@ -41,8 +41,22 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
                 
-            <Grid Grid.Row="0" Padding="20">
-                <Label Text="GreenTech" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50"></Label>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="170" />
+                </Grid.RowDefinitions>
+                <magicGradients:GradientView VerticalOptions="FillAndExpand">
+                    <magicGradients:GradientView.GradientSource>
+                        <magicGradients:CssGradientSource>
+                            <x:String>
+                                <![CDATA[
+linear-gradient(216deg, rgba(77, 77, 77,0.05) 0%, rgba(77, 77, 77,0.05) 25%,rgba(42, 42, 42,0.05) 25%, rgba(42, 42, 42,0.05) 38%,rgba(223, 223, 223,0.05) 38%, rgba(223, 223, 223,0.05) 75%,rgba(36, 36, 36,0.05) 75%, rgba(36, 36, 36,0.05) 100%),linear-gradient(44deg, rgba(128, 128, 128,0.05) 0%, rgba(128, 128, 128,0.05) 34%,rgba(212, 212, 212,0.05) 34%, rgba(212, 212, 212,0.05) 57%,rgba(25, 25, 25,0.05) 57%, rgba(25, 25, 25,0.05) 89%,rgba(135, 135, 135,0.05) 89%, rgba(135, 135, 135,0.05) 100%),linear-gradient(241deg, rgba(55, 55, 55,0.05) 0%, rgba(55, 55, 55,0.05) 14%,rgba(209, 209, 209,0.05) 14%, rgba(209, 209, 209,0.05) 60%,rgba(245, 245, 245,0.05) 60%, rgba(245, 245, 245,0.05) 69%,rgba(164, 164, 164,0.05) 69%, rgba(164, 164, 164,0.05) 100%),linear-gradient(249deg, rgba(248, 248, 248,0.05) 0%, rgba(248, 248, 248,0.05) 32%,rgba(148, 148, 148,0.05) 32%, rgba(148, 148, 148,0.05) 35%,rgba(202, 202, 202,0.05) 35%, rgba(202, 202, 202,0.05) 51%,rgba(181, 181, 181,0.05) 51%, rgba(181, 181, 181,0.05) 100%),linear-gradient(92deg, hsl(214,0%,11%),hsl(214,0%,11%))
+                                ]]>
+                            </x:String>
+                        </magicGradients:CssGradientSource>
+                    </magicGradients:GradientView.GradientSource>
+                </magicGradients:GradientView>
+                <Label Grid.Row="0" Text="GreenTech" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="50"></Label>
             </Grid>
                 
             <ScrollView Grid.Row="1">
@@ -53,10 +67,23 @@
                             <DataTemplate>
                                 <StackLayout Padding="5">
                                     <!-- #42B72C -->
-                                    <Frame Padding="10" CornerRadius="10" BackgroundColor="Black"> 
-                                        <StackLayout Orientation="Horizontal">
+                                    <Frame Padding="0" CornerRadius="10">
+                                        <Grid>
+                                            <magicGradients:GradientView VerticalOptions="FillAndExpand">
+                                                <magicGradients:GradientView.GradientSource>
+                                                    <magicGradients:CssGradientSource>
+                                                        <x:String>
+                                                            <![CDATA[
 
-                                            <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                                            linear-gradient(116deg, rgba(232, 232, 232, 0.03) 0%, rgba(232, 232, 232, 0.03) 10%,rgba(14, 14, 14, 0.03) 10%, rgba(14, 14, 14, 0.03) 66%,rgba(232, 232, 232, 0.03) 66%, rgba(232, 232, 232, 0.03) 72%,rgba(44, 44, 44, 0.03) 72%, rgba(44, 44, 44, 0.03) 81%,rgba(51, 51, 51, 0.03) 81%, rgba(51, 51, 51, 0.03) 100%),linear-gradient(109deg, rgba(155, 155, 155, 0.03) 0%, rgba(155, 155, 155, 0.03) 23%,rgba(30, 30, 30, 0.03) 23%, rgba(30, 30, 30, 0.03) 63%,rgba(124, 124, 124, 0.03) 63%, rgba(124, 124, 124, 0.03) 73%,rgba(195, 195, 195, 0.03) 73%, rgba(195, 195, 195, 0.03) 84%,rgba(187, 187, 187, 0.03) 84%, rgba(187, 187, 187, 0.03) 100%),linear-gradient(79deg, rgba(254, 254, 254, 0.03) 0%, rgba(254, 254, 254, 0.03) 27%,rgba(180, 180, 180, 0.03) 27%, rgba(180, 180, 180, 0.03) 33%,rgba(167, 167, 167, 0.03) 33%, rgba(167, 167, 167, 0.03) 34%,rgba(68, 68, 68, 0.03) 34%, rgba(68, 68, 68, 0.03) 63%,rgba(171, 171, 171, 0.03) 63%, rgba(171, 171, 171, 0.03) 100%),linear-gradient(109deg, rgba(71, 71, 71, 0.03) 0%, rgba(71, 71, 71, 0.03) 3%,rgba(97, 97, 97, 0.03) 3%, rgba(97, 97, 97, 0.03) 40%,rgba(40, 40, 40, 0.03) 40%, rgba(40, 40, 40, 0.03) 55%,rgba(5, 5, 5, 0.03) 55%, rgba(5, 5, 5, 0.03) 73%,rgba(242, 242, 242, 0.03) 73%, rgba(242, 242, 242, 0.03) 100%),linear-gradient(271deg, rgba(70, 70, 70, 0.03) 0%, rgba(70, 70, 70, 0.03) 11%,rgba(178, 178, 178, 0.03) 11%, rgba(178, 178, 178, 0.03) 23%,rgba(28, 28, 28, 0.03) 23%, rgba(28, 28, 28, 0.03) 72%,rgba(152, 152, 152, 0.03) 72%, rgba(152, 152, 152, 0.03) 86%,rgba(43, 43, 43, 0.03) 86%, rgba(43, 43, 43, 0.03) 100%),linear-gradient(90deg, rgb(27, 27, 27),rgb(1, 1, 1))
+                                                            ]]>
+                                                        </x:String>
+                                                    </magicGradients:CssGradientSource>
+                                                </magicGradients:GradientView.GradientSource>
+                                            </magicGradients:GradientView>
+                                        <StackLayout Orientation="Horizontal">
+                                            
+                                            <Frame BackgroundColor="White" HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="0" Margin="5">
                                                 <Image Source="https://static.vecteezy.com/system/resources/previews/000/609/684/non_2x/fire-logo-and-symbols-template-icons-app-vector.jpg" Aspect="AspectFill" Margin="0"/>
                                             </Frame>
                                             <StackLayout>
@@ -72,6 +99,7 @@
                                                        FontSize="13" />
                                             </StackLayout>
                                         </StackLayout>
+                                            </Grid>
                                     </Frame>
 
                                     <StackLayout.GestureRecognizers>

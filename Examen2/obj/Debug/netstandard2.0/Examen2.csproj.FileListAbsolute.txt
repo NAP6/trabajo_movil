@@ -60,8 +60,6 @@ C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\Views\L\view
 C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\Views\L\ViewMqtt.xaml.g.cs
 C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\Examen2.AssemblyInfoInputs.cache
 C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\Examen2.AssemblyInfo.cs
-C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\Examen2.csproj.CoreCompileInputs.cache
-C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\Examen2.dll
 C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\ref\Examen2.dll
 C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\Examen2.pdb
@@ -88,3 +86,5 @@ C:\Users\panat\OneDrive\Escritorio\trabajo_movil\Examen2\obj\Debug\netstandard2.
 C:\Users\panat\OneDrive\Escritorio\trabajo_movil\Examen2\obj\Debug\netstandard2.0\Examen2.pdb
 C:\Users\panat\OneDrive\Escritorio\trabajo_movil\Examen2\obj\Debug\netstandard2.0\Examen2.csproj.CoreCompileInputs.cache
 C:\Users\panat\OneDrive\Escritorio\trabajo_movil\Examen2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\Examen2.csproj.CoreCompileInputs.cache
+C:\Users\NICO\source\repos\Examen2\Examen2\obj\Debug\netstandard2.0\XamlC.stamp

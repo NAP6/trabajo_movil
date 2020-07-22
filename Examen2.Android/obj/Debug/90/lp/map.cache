@@ -1,4 +1,7 @@
 FormsViewGroup
+SkiaSharp
+SkiaSharp.Views.Android
+SkiaSharp.Views.Forms
 Syncfusion.Buttons.XForms.Android
 Syncfusion.Cards.XForms.Android
 Syncfusion.Core.XForms.Android
